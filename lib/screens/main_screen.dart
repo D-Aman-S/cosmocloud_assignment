@@ -102,7 +102,7 @@ class _MainScreenState extends State<MainScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => AddEmployeeScreen()),
+          MaterialPageRoute(builder: (context) => const AddEmployeeScreen()),
         ),
         child: Icon(Icons.add),
       ),

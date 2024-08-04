@@ -54,8 +54,8 @@ class EmployeeService {
   }
 
   static Future<void> deleteEmployee(String id) async {
-    final response = await http
-        .delete(Uri.parse('$baseUrl/employee/$id'), headers: headers, body: {});
+    final response = await http.delete(Uri.parse('$baseUrl/employee/$id'),
+        headers: headers, body: json.encode({}));
 
     if (response.statusCode != 200) {
       throw Exception('Failed to delete employee');
